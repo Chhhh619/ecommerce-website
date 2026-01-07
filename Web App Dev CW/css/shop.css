@@ -1,0 +1,157 @@
+﻿.containerint {
+    position: relative;
+    height: 55px;
+    width: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 20px 20px 0px rgba(226, 7, 237, 0.05);
+    padding-top: 15px;
+    z-index: 1;
+}
+
+    .containerint p {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+.containershop {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    background-color: #fafafa;
+}
+
+    .containershop h2 {
+        padding: 80px 80px;
+        font-weight: 600;
+    }
+
+.containershop2 {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.shop-item {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 200px;
+}
+
+    .shop-item p {
+        text-align: center;
+    }
+
+    .shop-item img {
+        width: 100%;
+        max-width: 120px;
+        height: auto;
+        object-fit: cover;
+        max-height: 200px;
+        transition: transform 0.3s ease;
+    }
+
+        .shop-item img:hover {
+            transform: scale(1.1);
+        }
+
+
+.iphone-section {
+    width: 100%;
+    height: 100px;
+}
+
+.mac-section {
+    width: 100%;
+    height: 100px;
+}
+
+.airpods-section {
+    width: 100%;
+    height: 100px;
+}
+
+.containershop3 {
+    width: 100%;
+    height: contain;
+    padding-bottom:50px
+}
+
+.containershop4 {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.containershop5 {
+    background-color: white;
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.03);
+    border-radius: 15px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+    height: 520px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.newTag {
+    text-align: left;
+}
+
+    .newTag h3 {
+        color: #a94c41;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+.shopimage {
+    margin: 20px 0;
+    width: 90%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.itemname {
+    text-align: left;
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.itemprice {
+    text-align: left;
+    margin: 20px 0;
+    margin-bottom:40px;
+    font-size: 18px;
+}
+
+.buybutton {
+    background-color: #306fdb;
+    color: white;
+    padding: 12px 130px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+    .buybutton:hover {
+        background-color: #3375e5;
+        color: white;
+        text-decoration: none;
+    }

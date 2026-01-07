@@ -1,0 +1,202 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Web_App_Dev_CW.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <%--bootstrap css--%>
+    <link href="bootstrap/css_/bootstrap.min.css" rel="stylesheet" />
+
+    <%--jquery--%>
+    <script src="bootstrap/js_/jquery-3.3.1.slim.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js_/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/js_/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/brewislife.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/java.css">
+    <link rel="stylesheet" href="css/review.css">
+    <link rel="stylesheet" href="css/apple.css">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 47px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <nav style="z-index:2;" class="navbar navbar-expand-lg navbar-light navbar-custom">
+            <a class="navbar-brand" href="homePage1.aspx">
+                <img src="image/pineapple.png" class="auto-style1" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" data-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="shop.aspx">Shop</a>
+                        <ul class="dropdown-content">
+                            <li><a href="buyIphonePro.aspx">iPhone 16 Pro</a></li>
+                            <li><a href="buyIphone.aspx">iPhone 16</a></li>
+                            <li><a href="buyMac.aspx">MacBook</a></li>
+                            <li><a href="buyAirpods.aspx">AirPods</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="macDetail.aspx">Mac
+                        </a>
+                        <ul class="dropdown-content">
+                            <li><a href="macDetail.aspx">Explore Mac</a></li>
+                            <li><a href="buyMac.aspx">Shop Mac</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="iphoneDetail.aspx">iPhone</a>
+                        <ul class="dropdown-content">
+                            <li><a href="iphoneDetail.aspx">Explore iPhones</a></li>
+                            <li><a href="buyIphonePro.aspx">Shop iPhone 16 Pro</a></li>
+                            <li><a href="buyIphone.aspx">Shop iPhone 16</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="airpodsDetail.aspx">AirPods</a>
+                        <ul class="dropdown-content">
+                            <li><a href="airpodsDetail.aspx">Explore Airpods</a></li>
+                            <li><a href="buyAirpods.aspx">Shop AirPods</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="ShoppingCart.aspx">Shopping Cart</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="SupportPage.aspx">Support</a>
+                    <li class="nav-item active">
+         <a class="nav-link">Profile</a>
+              <ul class="dropdown-content">
+                 <li id="loginMenuItem" runat="server" class="nav-item">
+                     <a class="nav-link" href="login.aspx">Login</a>
+                 </li>
+                 <li id="registerMenuItem" runat="server" class="nav-item">
+                     <a class="nav-link" href="customerRegistration.aspx">Register</a>
+                 </li>
+                 <li id="profileMenuItem" runat="server" class="nav-item">
+                     <asp:HyperLink ID="profileLink" runat="server" CssClass="nav-link">Profile</asp:HyperLink>
+                 </li>
+                 <li id="logoutMenuItem" runat="server" class="nav-item" visible="false">
+                     <a class="nav-link" href="logout.aspx">Logout</a>
+                 </li>
+             </ul>
+     </li>
+                </ul>
+
+               
+            </div>
+        </nav>
+
+
+
+        <div class="sitemapDiv">
+            <asp:SiteMapPath class="sitemap" ID="SiteMapPath1" runat="server"></asp:SiteMapPath>
+        </div>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+    </form>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h3>About us
+                    </h3>
+                    <ul>
+                        <h2>
+                            <a href="homePage1.aspx">PINEAPPLE</a>
+                        </h2>
+                        <br>
+                        <br>
+                        <li>Our vision is to empower individuals to unleash their creativity and productivity through seamless integration of hardware, software, and services.
+                            At Pineapple, we strive to make every product, from the iPhone to the MacBook, and the AirPods an extension of your individuality.</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links
+                    </h3>
+                    <ul>
+                        <li><a href="homePage1.aspx">Home</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="return.html">Return & Refund Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us
+                    </h3>
+                    <ul>
+                        <li>Phone:<br>
+                            <a href="tel:+60127857687">03-28568287</a></li>
+                        <li>WhatsApp:<br>
+                            <a href="tel:+601116882325">011-16882325</a></li>
+                        <li>Email:<br>
+                            <a href="mailto: info@pineapple.com">info@pineapple.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Location & Operating Hours
+                    </h3>
+                    <ul>
+                        <li>
+                            <a href="https://goo.gl/maps/1kG3uGhWcaSwjXQG7">
+                                <u>Petaling Jaya</u>
+                                <br>
+                                1, Jalan PJU 3/50, Sunway Damansara, 47810 Petaling Jaya, Selangor<br>
+                            </a>
+
+                            <br>
+
+                            <a
+                                href="https://www.google.com/maps/place/BEAN+BROTHERS+KL/@3.1598853,101.7208379,17z/data=!3m1!4b1!4m6!3m5!1s0x31cc37bc6ad1bd6b:0x70d04bf09cff6598!8m2!3d3.1598853!4d101.7208379!16s%2Fg%2F11g_yfpj8k?entry=ttu">
+                                <u>Kuala Lumpur (The LINC)</u>
+                                <br>
+                                G-1, The Linc, Jalan Tun Razak, 50400 Kuala Lumpur
+                                <br>
+                            </a>
+
+                            <br>
+                            Monday to Sunday
+                            <br>
+                            : 1000 - 2200
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <p>Copyright © 2024 Pineapple Inc. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+

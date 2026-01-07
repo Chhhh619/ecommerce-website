@@ -1,0 +1,110 @@
+        <div class="containerProducts">
+            <div class="image">
+                <img src="image/iphone16pro_6.1_black.png" alt="iphone 16 pro black">
+                <div class="productDesc">
+                    <b>iPhone 16 Pro</b>
+                    <br>
+                    <i>RM4999.00</i>
+                </div>
+            </div>
+
+
+            <div class="image">
+                <img src="./img/Classic_Pineaple_Tart.jpg" alt="ClassicPineapleTart">
+                <div class="productDesc">
+                    <b>Classic Pineapple Tart</b>
+                    <br>
+                    RM38.00
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Classic_White_Coffee.jpg" alt="ClassicWhiteCoffee">
+                <div class="productDesc">
+                    <b>Classic White Coffee</b>
+                    <br>
+                    RM18.90
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Creamy_Peanut_Butter.jpg" alt="CreamyPeanutButter">
+                <div class="productDesc">
+                    <b>Creamy Peanut Butter</b>
+                    <br>
+                    RM18.90
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Crunchy_Peanut_Butter.jpg" alt="CrunchyPeanutButter">
+                <div class="productDesc">
+                    <b>Crunchy Peanut Butter</b>
+                    <br>
+                    RM14.90
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Handmade_Soup_Noodle.jpg" alt="HandmadeSoupNoodle">
+                <div class="productDesc">
+                    <b>Handmade Soup Noodlee</b>
+                    <br>
+                    RM5.90
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Mala_Handmade_Dry_Noodle.jpg" alt="MalaHandmadeDryNoodle">
+                <div class="productDesc">
+                    <b>Mala Handmade Dry Noodle</b>
+                    <br>
+                    RM6.90
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Oriental_Pandan_Kaya.jpg" alt="OrientalPandanKaya">
+                <div class="productDesc">
+                    <b>Oriental Pandan Kaya</b>
+                    <br>
+                    RM8.90
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Original_Handmade_Dry_Noodle.jpg" alt="OriginalHandmadeDryNoodle">
+                <div class="productDesc">
+                    <b>Original Handmade Dry Noodle</b>
+                    <br>
+                    RM4.90
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Roasted_White_Coffee.jpg" alt="RoastedWhiteCoffee">
+                <div class="productDesc">
+                    <b>Roasted White Coffee</b>
+                    <br>
+                    RM21.90
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Premium_Drip_Coffee.jpg" alt="PremiumDripCoffee">
+                <div class="productDesc">
+                    <b>Premium Drip Coffee</b>
+                    <br>
+                    RM28.90
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="./img/Spicy_Handmade_Dry_noodle.jpg" alt="SpicyHandmadeDrynoodle">
+                <div class="productDesc">
+                    <b>Spicy Handmade Drynoodle</b>
+                    <br>
+                    RM5.90
+                </div>
+            </div>
+        </div>

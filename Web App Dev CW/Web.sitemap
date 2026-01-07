@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="homePage1.aspx" title="Home"  description="Home Page">
+		<siteMapNode url="shop.aspx" title="Shop"  description="Shop Page">
+			<siteMapNode url="buyIphonePro.aspx" title="Shop Iphone 16 Pro"  description="Buy iPhone 16 Pro" />
+			<siteMapNode url="buyIphone.aspx" title="Shop Iphone 16"  description="Buy iPhone 16" />
+			<siteMapNode url="buyMac.aspx" title="Shop MacBook"  description="Buy MacBook" />
+			<siteMapNode url="buyAirpods.aspx" title="Shop AirPods"  description="Buy AirPods" />
+			
+		</siteMapNode>
+		
+		<siteMapNode title="Explore">
+			<siteMapNode url="macDetail.aspx" title="MacBook"/>
+			<siteMapNode url="iphoneDetail.aspx" title="iPhone"/>
+			<siteMapNode url="airpodsDetail.aspx" title="AirPods"/>
+		</siteMapNode>
+		<siteMapNode url="shoppingCart.aspx" title="Shopping Cart">
+			<siteMapNode url="checkout.aspx" title="Checkout" />
+		</siteMapNode>
+		<siteMapNode url="SupportPage.aspx" title="Support"  description="Support"/>
+		<siteMapNode url="adminDashboard.aspx" title="Admin Dashboard"  description="Admin Dashboard">
+			<siteMapNode url="manageProduct.aspx" title="Product Management"  description="Product Management">
+				<siteMapNode url="addProduct.aspx" title="Add Product"  description="Add Product" />
+				<siteMapNode url="editProduct.aspx" title="Edit Product"  description="Edit Product" />
+				<siteMapNode url="removeProduct.aspx" title="Remove Product"  description="Remove Product" />
+			</siteMapNode>
+			<siteMapNode url="UserManagement1.aspx" title="User Management" description="User Management">
+			</siteMapNode>
+			<siteMapNode url="orderAdmin.aspx" title="View Orders" description="View Orders">
+			</siteMapNode>
+			<siteMapNode url="adminFeedback.aspx" title="Customer's Feedback" description="Customer's Feedback">
+			</siteMapNode>
+		</siteMapNode>
+		
+		<siteMapNode title="User Profile"  description="User Profile">
+			<siteMapNode url="login.aspx" title="User Login"  description="User Login" />
+			<siteMapNode url="adminLogin.aspx" title="Admin Login"  description="Admin Login" />
+			<siteMapNode url="adminRegister.aspx" title="Admin Register"  description="Admin Register" />
+			<siteMapNode url="customerRegistration.aspx" title="Sign Up"  description="User Registration" />
+			<siteMapNode url="userProfile.aspx" title="Edit Profile"  description="Edit Profile" />
+
+		</siteMapNode>
+		
+		
+					
+	</siteMapNode>
+</siteMap>

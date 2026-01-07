@@ -1,0 +1,89 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Web_App_Dev_CW
+{
+    public partial class BuyIphone : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack)
+            {
+                UpdateProductDetails(); // Initialize default product details
+            }
+        }
+
+        protected void ddlDisplay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateProductDetails(); // Handle screen size changes
+        }
+
+        protected void ddlStorage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateProductDetails(); // Handle storage option changes
+        }
+
+        protected void ddlColor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateProductDetails(); // Handle color changes
+        }
+
+        protected void btnAddToCart_Click(object sender, EventArgs e)
+        {
+            // Handle add to cart logic here
+            string selectedModel = ddlDisplay.SelectedValue;
+            string selectedStorage = ddlStorage.SelectedValue;
+            string selectedColor = ddlColor.SelectedValue;
+            string price = lblPrice.Text;
+
+            // Store or display these values as needed
+        }
+
+        private void UpdateProductDetails()
+        {
+            // Retrieve user selections
+            string selectedDisplay = ddlDisplay.SelectedValue; // Screen size
+            string selectedStorage = ddlStorage.SelectedValue;
+            string selectedColor = ddlColor.SelectedValue;
+
+            // Update the product image dynamically
+            imgProduct.ImageUrl = $"image/iphone16pro_{selectedDisplay}_{selectedColor.ToLower()}.png";
+            imgProduct.AlternateText = $"iPhone 16 Pro {selectedDisplay}\" {selectedColor}";
+
+            // Update the price dynamically based on selections
+            lblPrice.Text = GetPrice(selectedDisplay, selectedStorage);
+        }
+
+        private string GetPrice(string model, string storage)
+        {
+            // Example pricing logic
+            int basePrice = 7299; // Base price for the default configuration
+            int modelPrice = model == "6.9" ? 500 : 0; // Add cost for larger display
+            int storagePrice = 0;
+
+            if (storage == "128")
+            {
+                storagePrice = 0;
+            }
+            else if (storage == "256")
+            {
+                storagePrice = 300;
+            }
+            else if (storage == "512")
+            {
+                storagePrice = 600;
+            }
+            else if (storage == "1024")
+            {
+                storagePrice = 1000;
+            }
+
+            int totalPrice = basePrice + modelPrice + storagePrice;
+            return $"RM {totalPrice:N2}"; // Format as currency
+        }
+    }
+}

@@ -1,0 +1,132 @@
+.menu1 .carousel {
+    white-space: nowrap;
+    cursor: pointer;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    font-size: 0;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img{
+    pointer-events: none;
+}
+
+.carousel{
+    margin: 100px 0;
+}
+
+.carousel img {
+    height: 340px;
+    width: 420px;
+    max-width: 100%;
+    object-fit: cover; 
+    margin-right: 20px;
+}
+
+.carousel img:first-child {
+    margin-left: 0px;
+}
+
+.carousel a{
+    margin: 0;
+    padding: 0;
+}
+
+.menu1 {
+    max-width: 100%;
+    position: relative;
+}
+
+#left, #right{
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+    transform: translateY(-50%);
+    background-color: black;
+    border-radius: 50%;
+    line-height: 46px;
+    font-size: 28px;
+    height: 46px;
+    width: 46px;
+    color: white;
+    text-align: center;
+    z-index: 99;
+}
+
+.menu1 span:first-child {
+    left: -12px;
+}
+
+.menu1 span:last-child {
+    right: -22px;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 110px;
+}
+
+@media screen and (max-width:900px) {
+    .carousel img {
+        width: calc(100%/2);
+    }
+}
+
+@media screen and (max-width:570px) {
+    .carousel a img {
+        width: 100%;
+    }
+}
+
+.image_menu{
+    margin: 75px 10px;
+    border: 1px solid #ccc;
+    float: left;
+    max-width: 390px;
+    max-height: 650px;
+}
+
+.image_menu img {
+    object-fit: cover;
+    height: 400px;
+    max-height: 100%;
+    width: 389px;
+    max-width: 100%;
+}
+
+.desc {
+    padding: 30px;
+    text-align: center;
+}
+
+.menu_pages li{
+    margin: auto;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+}
+
+.menu_pages li a{
+    display: block;
+    color: #151515;
+    text-align: center;
+    padding-top: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+  }
+
+.menu_pages li a:hover {
+    color: #D3D3D3;
+  }
+ 

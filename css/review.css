@@ -1,0 +1,49 @@
+.container4{
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+}
+
+.container4 img{
+    padding: 50px 50px 0 50px;
+}
+
+.container4 img:last-child{
+    padding-bottom: 80px;
+}
+
+.review {
+    max-width: 60%;
+    max-height: 100%;
+    margin: auto;
+  }
+  
+  .review:not(:last-child) {
+    padding-bottom: 50px;
+    border-bottom: 1px #151515 solid;
+  }
+  
+  .review:not(:first-child) {
+    padding-top: 50px;
+  }
+  
+  .review h2 {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .review p {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.975rem;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+    color: #151515;
+  }
+  
+  .review p span {
+    color: #ffc905;
+  }

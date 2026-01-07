@@ -1,0 +1,60 @@
+<%@ Page Title="Buy iPhone 16 Pro" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="BuyIphone.aspx.cs" Inherits="Web_App_Dev_CW.BuyIphone" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link href="detailedshop.css" rel="stylesheet" />
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
+        <div class="product-flex-container">
+            <div class="test">
+                <p>hello</p>
+            </div>
+
+            <div class="product-image-container">
+                <asp:Image ID="imgProduct" runat="server" ImageUrl="image/iphone16prodesert.png" AlternateText="iPhone 16 Pro" />
+            </div>
+
+            <div class="product-options-container">
+                <h1>Buy iPhone 16 Pro</h1>
+
+                <div class="option-group">
+                    <label for="ddlDisplay">Select Model:</label>
+                    <asp:DropDownList ID="ddlDisplay" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlDisplay_SelectedIndexChanged">
+                        <asp:ListItem Text="6.1-inch display" Value="6.1" />
+                        <asp:ListItem Text="6.9-inch display" Value="6.9" Selected="True" />
+                    </asp:DropDownList>
+                </div>
+
+                <div class="option-group">
+                    <label for="ddlStorage">Select Storage:</label>
+                    <asp:DropDownList ID="ddlStorage" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlStorage_SelectedIndexChanged">
+                        <asp:ListItem Text="128GB" Value="128" />
+                        <asp:ListItem Text="256GB" Value="256" />
+                        <asp:ListItem Text="512GB" Value="512" />
+                        <asp:ListItem Text="1TB" Value="1024" Selected="True" />
+                    </asp:DropDownList>
+                </div>
+
+                <div class="option-group">
+                    <label for="ddlColor">Select Color:</label>
+                    <asp:DropDownList ID="ddlColor" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddlColor_SelectedIndexChanged">
+                        <asp:ListItem Text="Desert Titanium" Value="desert" Selected="True" />
+                        <asp:ListItem Text="White Titanium" Value="white" />
+                        <asp:ListItem Text="Black Titanium" Value="black" />
+                        <asp:ListItem Text="Titanium" Value="titanium" />
+                    </asp:DropDownList>
+                </div>
+
+                <div class="product-price">
+                    <h3>Price: <asp:Label ID="lblPrice" runat="server" Text="RM 7,299.00"></asp:Label></h3>
+                </div>
+
+                <div class="add-to-cart">
+                    <asp:Button ID="btnAddToCart" runat="server" Text="Add to Cart" CssClass="btn" OnClick="btnAddToCart_Click" />
+                </div>
+            </div>
+
+        </div>
+
+</asp:Content>

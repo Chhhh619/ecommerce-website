@@ -1,0 +1,117 @@
+  .openBtn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .openBtn:hover {
+    color: gray;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
+  
+  #searchbut {
+    background: none;
+    color: #020202;
+  }
+  
+  #searchbut:hover {
+    color: gray;
+    transition: all 0.5s ease;
+  }
+
+  .search-box{
+    width: 70%;
+    background-color:#ffffff;
+    margin: 250px auto 0;
+    border-radius: 5px;
+  }
+
+  .row2{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid gray;
+  }
+
+  input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: gray; 
+  }
+
+  .row2 button{
+    background: transparent;
+    outline: 0;
+    border: 0;
+  }
+
+ .row2 button .fa-solid{
+    width: 25px;
+    background-color: transparent;
+    color: gray;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+
+  .row2 button .fa-solid:hover{
+    color: #D3D3D3;
+  }
+
+  ::placeholder{
+    color: gray;
+  }
+
+  .result-box{
+    width: 100%;
+  }
+
+  .result-box ul{
+    padding: 15px 10px;
+    
+  }
+
+.result-box ul li{
+    width: 100%;
+    font-family: 'Poppins', sans-serif; 
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+
+  .result-box ul li:hover{
+    color: #D3D3D3;
+  }
+
